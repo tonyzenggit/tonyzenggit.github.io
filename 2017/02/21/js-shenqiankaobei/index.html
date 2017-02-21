@@ -3,14 +3,36 @@
 <head>
   <meta charset="utf-8">
   
-  <title>归档: 2016 | TonyZeng</title>
+  <title>Js中的深浅拷贝 | TonyZeng</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="TonyZeng">
-<meta property="og:url" content="http://www.zengnx.com/archives/2016/index.html">
+  <meta name="description" content="//数组的拷贝var arr = [1,2,3,4];
+var cloneArr = arr;
+cloneArr[1] =  100;
+console.log(‘原数组\t’ + arr);console.log(‘现在的数组\t’ + cloneArr);
+var arrDepth = [[1,2],4,5,6];
+var arrtoo = arrDepth.slice(0);
+console.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Js中的深浅拷贝">
+<meta property="og:url" content="http://www.zengnx.com/2017/02/21/js-shenqiankaobei/index.html">
 <meta property="og:site_name" content="TonyZeng">
+<meta property="og:description" content="//数组的拷贝var arr = [1,2,3,4];
+var cloneArr = arr;
+cloneArr[1] =  100;
+console.log(‘原数组\t’ + arr);console.log(‘现在的数组\t’ + cloneArr);
+var arrDepth = [[1,2],4,5,6];
+var arrtoo = arrDepth.slice(0);
+console.">
+<meta property="og:updated_time" content="2017-02-21T13:09:22.624Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="TonyZeng">
+<meta name="twitter:title" content="Js中的深浅拷贝">
+<meta name="twitter:description" content="//数组的拷贝var arr = [1,2,3,4];
+var cloneArr = arr;
+cloneArr[1] =  100;
+console.log(‘原数组\t’ + arr);console.log(‘现在的数组\t’ + cloneArr);
+var arrDepth = [[1,2],4,5,6];
+var arrtoo = arrDepth.slice(0);
+console.">
   
     <link rel="alternate" href="/atom.xml" title="TonyZeng" type="application/atom+xml">
   
@@ -59,58 +81,66 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/12/29/first-text-post/" class="archive-article-date">
-  <time datetime="2016-12-29T06:58:26.000Z" itemprop="datePublished">12月 29</time>
+        <section id="main"><article id="post-js-shenqiankaobei" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/02/21/js-shenqiankaobei/" class="article-date">
+  <time datetime="2017-02-21T13:08:30.000Z" itemprop="datePublished">2017-02-21</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/12/29/first-text-post/">first text post</a>
+    <h1 class="article-title" itemprop="name">
+      Js中的深浅拷贝
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/12/28/hello-world/" class="archive-article-date">
-  <time datetime="2016-12-28T03:58:26.000Z" itemprop="datePublished">12月 28</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/12/28/hello-world/">Hello World</a>
-    </h1>
-  
+        <p>//数组的拷贝<br>var arr = [1,2,3,4];</p>
+<p>var cloneArr = arr;</p>
+<p>cloneArr[1] =  100;</p>
+<p>console.log(‘原数组\t’ + arr);<br>console.log(‘现在的数组\t’ + cloneArr);</p>
+<p>var arrDepth = [[1,2],4,5,6];</p>
+<p>var arrtoo = arrDepth.slice(0);</p>
+<p>console.log(arrDepth);<br>console.log(arrtoo);</p>
+<p>var arr3 = [“One”,”Two”,”Three”];</p>
+<p>var arrtooo3 = arr3.concat();</p>
+<p>console.log(‘111’+arr3)</p>
+<p>console.log(‘111’+arrtooo3)</p>
+<p>console.log(‘2222222222222222222222222222222222222222222222’);</p>
+<p>var a={name:’yy’,age:26};<br>var b=new Object();<br>b.name = a.name;<br>b.age = 100;</p>
+<p>console.log(a);<br>console.log(b);</p>
+<p>console.log(‘111111111111111111111111111111111111111111111111’);<br>var deepCopy= function(source) {<br>var result={};<br>for (var key in source) {<br>      result[key] = typeof source[key]===’object’? deepCoyp(source[key]): source[key];<br>    }<br>   console.log(result);<br>}<br>deepCopy({“a”:”s”,”b”:”b”});</p>
 
-    </header>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.zengnx.com/2017/02/21/js-shenqiankaobei/" data-id="cizfjtqmx00015gbqa8ztgdh2" class="article-share-link">Share</a>
+      
+      
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/12/29/first-text-post/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">first text post</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 </section>
         

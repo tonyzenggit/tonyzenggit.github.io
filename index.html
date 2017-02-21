@@ -61,6 +61,57 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-js-shenqiankaobei" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/02/21/js-shenqiankaobei/" class="article-date">
+  <time datetime="2017-02-21T13:08:30.000Z" itemprop="datePublished">2017-02-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/02/21/js-shenqiankaobei/">Js中的深浅拷贝</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>//数组的拷贝<br>var arr = [1,2,3,4];</p>
+<p>var cloneArr = arr;</p>
+<p>cloneArr[1] =  100;</p>
+<p>console.log(‘原数组\t’ + arr);<br>console.log(‘现在的数组\t’ + cloneArr);</p>
+<p>var arrDepth = [[1,2],4,5,6];</p>
+<p>var arrtoo = arrDepth.slice(0);</p>
+<p>console.log(arrDepth);<br>console.log(arrtoo);</p>
+<p>var arr3 = [“One”,”Two”,”Three”];</p>
+<p>var arrtooo3 = arr3.concat();</p>
+<p>console.log(‘111’+arr3)</p>
+<p>console.log(‘111’+arrtooo3)</p>
+<p>console.log(‘2222222222222222222222222222222222222222222222’);</p>
+<p>var a={name:’yy’,age:26};<br>var b=new Object();<br>b.name = a.name;<br>b.age = 100;</p>
+<p>console.log(a);<br>console.log(b);</p>
+<p>console.log(‘111111111111111111111111111111111111111111111111’);<br>var deepCopy= function(source) {<br>var result={};<br>for (var key in source) {<br>      result[key] = typeof source[key]===’object’? deepCoyp(source[key]): source[key];<br>    }<br>   console.log(result);<br>}<br>deepCopy({“a”:”s”,”b”:”b”});</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.zengnx.com/2017/02/21/js-shenqiankaobei/" data-id="cizfjtqmx00015gbqa8ztgdh2" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-first-text-post" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/12/29/first-text-post/" class="article-date">
@@ -88,7 +139,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.zengnx.com/2016/12/29/first-text-post/" data-id="cixvob7450000ygbqe54j4lna" class="article-share-link">Share</a>
+      <a data-url="http://www.zengnx.com/2016/12/29/first-text-post/" data-id="cizfjtqla00005gbq76cwwbz5" class="article-share-link">Share</a>
       
       
     </footer>
@@ -133,7 +184,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.zengnx.com/2016/12/28/hello-world/" data-id="cixvob74b0001ygbq96qr3dqk" class="article-share-link">Share</a>
+      <a data-url="http://www.zengnx.com/2016/12/28/hello-world/" data-id="cizfjtqno00025gbq2gp9wnd1" class="article-share-link">Share</a>
       
       
     </footer>
@@ -160,7 +211,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a></li></ul>
     </div>
   </div>
 
@@ -171,6 +222,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/02/21/js-shenqiankaobei/">Js中的深浅拷贝</a>
+          </li>
         
           <li>
             <a href="/2016/12/29/first-text-post/">first text post</a>
